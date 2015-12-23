@@ -1,0 +1,29 @@
+<div class="container">
+	<div id="cardarea">
+		<div class="form-inline pull-right">
+			<label for="search"><i class="fa fa-search"></i></label>
+			<input name="query" placeholder="Search" id="search" ng-model="searchQuery">
+		</div>
+
+		<table class="table">
+			<tr> 
+				<th><a href="">Card Name</a></th>
+				<th><a href="">Class</a></th>
+				<th><a href="">Card Set</a></th>
+				<th><a href="">Rarity</a></th>
+				<th><a href="">Cost</a></th>
+				<th><a href="">Flavor Text</a></th>
+			</tr>
+			<tbody ng-repeat="sets in allCards">
+			<tr ng-repeat="card in sets | filter:searchQuery">
+				<td>{{card.name}}</td>
+				<td>{{card.playerClass}}</td>
+				<td>{{card.cardSet}}</td>
+				<td>{{card.rarity}}</td>
+				<td>{{card.cost}}</td>
+				<td>{{card.flavor}}</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -13,9 +13,26 @@
 
 <body ng-app="HearthstoneApp">
 
+    <nav>
+        <div class="container-fluid">
+        <ul class="nav-menu">
+            <li><a ui-sref="browse">Card Browser</a></li>
+            <li><a href="">View Decks</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+        <ul class="navbar-right nav-menu">
+            <li><a ui-sref="build">Build a Deck</a></li>
+        </ul>
+        </div>
+    </nav>
+
     <div id="header">
         <h1 id="appName">Hearthstone Deckbuilder</h1>
         <h3 id="appDescribe">Build and Share Top Hearthstone Decks</h3>
+        <button class="btn btn-primary">Card Browser</button>
+        <button class="btn btn-primary">View Decks</button>
+        <button class="btn btn-primary">Build a Deck</button>
+        <button class="btn btn-primary">Blog</button>
     </div>
 
     <!-- Where different routes will be displayed-->

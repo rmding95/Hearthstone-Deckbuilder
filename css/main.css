@@ -1,1 +1,48 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
+body {
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+	font-size: 16px;
+	font-weight: 300;
+	background-color: #E9EAEE;
+}
+
+#header {
+	padding-top: 50px;
+}
+
+nav {
+	position: fixed;
+	background-color: #181c22;
+	z-index: 1000;
+	width: 100%;
+	padding: 0.5em;
+}
+
+.nav-menu {
+	display: inline-block;
+	list-style: none;
+	padding-left: 0px;	
+}
+
+.nav-menu li{
+	display: inline;
+}
+
+.nav-menu a {
+	color: white;
+	font-size: 16px;
+	font-variant: small-caps;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+.nav-menu a:visited {
+	text-decoration: none;
+}
+
+.nav-menu a:hover {
+	color: #d87e28;
+	text-decoration: none;
+	fill: #d87e28;
+}
